@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Quantico);
+html, body {
+  background: #111;
+  color: white;
+  overflow:hidden;
+}
+
+.centerDiv{
+width:800px;
+padding:10px;
+height:50px;
+position:absolute;
+margin-top:-25px;
+margin-left:-400px;
+top:25%;
+left:50%;}
+
+#container {
+  background: #111;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+#stats {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.parent
+{
+    position: fixed: 
+    width: 100%;
+    
+
+}
+
+.marquee1
+{
+    margin: 0 auto;
+    display: block;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 100;
+    line-height: 42.9px;
+}
+
+
+.fixed
+{
+    position: fixed:
+    width: 100px;  
+    height: 100px;
+}
