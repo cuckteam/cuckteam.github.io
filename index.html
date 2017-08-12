@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-<title>cuck.team</title>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
+<title>cuck.team</title> 
+<link rel="icon" href="https://cdn.discordapp.com/attachments/327552088592875520/345738690133491722/horror-knife-2-icon_1.png"> <link rel="stylesheet" type="text/css" href="mystyle.css">
 <style>
 h1 {
     left: 0;
@@ -26,8 +26,8 @@ h1 {
 
 <body link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF">
 
-<audio id= "audio1" onloadeddata="setHalfVolume()" autoplay> 
-    <source src="chrn.mp3"  type="audio/mp3">
+<audio id= "audio1" onloadeddata="setHalfVolume()" autoplay loop> 
+    <source src="lost.mp3"  type="audio/mp3">
 </audio>
 
 
@@ -70,6 +70,7 @@ h1 {
  <a href="http://steamcommunity.com/profiles/76561197963980826" style="text-decoration:none target="_blank">veuz</a> //
  <a href="http://steamcommunity.com/profiles/76561198098437311" style="text-decoration:none target="_blank">iris</a> //
  <a href="http://steamcommunity.com/profiles/76561198357571516" style="text-decoration:none target="_blank">erfolge</a> //
+ <a href="http://steamcommunity.com/profiles/76561197984436595" style="text-decoration:none target="_blank">koszZ</a> //    
  <a href="http://steamcommunity.com/profiles/76561198183147358" style="text-decoration:none target="_blank">fLasHyyy</a>
 </marquee>
 </div>
@@ -77,27 +78,16 @@ h1 {
 </body>
 <script>
 function setHalfVolume() {
-    var myAudio = document.getElementById("audio1");  
+    var myAudio = document.getElementById("audio1");
     myAudio.volume = 0.05;
 }
-var NUM_PARTICLES = ( ( ROWS = 100 ) * ( COLS = 210) ),
+var NUM_PARTICLES = ( ( ROWS = 150 ) * ( COLS = 240) ),
     THICKNESS = Math.pow( 80, 2 ),
-    SPACING = 8,
+    SPACING = 9,
     MARGIN = 100,
     COLOR = 220,
     DRAG = 0.95,
     EASE = 0.25,
-    
-    /*
-    
-    used for sine approximation, but Math.sin in Chrome is still fast enough :)http://jsperf.com/math-sin-vs-sine-approximation
-
-    B = 4 / Math.PI,
-    C = -4 / Math.pow( Math.PI, 2 ),
-    P = 0.225,
-
-    */
-
     container,
     particle,
     canvas,
