@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-<title>cuck.team</title> 
-<link rel="icon" href="https://cdn.discordapp.com/attachments/327552088592875520/345738690133491722/horror-knife-2-icon_1.png"> <link rel="stylesheet" type="text/css" href="mystyle.css">
+<title>cuck.team</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
 <style>
 h1 {
     left: 0;
@@ -20,14 +20,24 @@ h1 {
     line-height: 42.9px;
 
 }
+
+h4 {
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    top: 60%;
+    width: 100%;
+    position: absolute;
+    text-decoration: underline;
+}
+
+
 </style>
 </head>
 
 
 <body link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF">
 
-<audio id= "audio1" onloadeddata="setHalfVolume()" autoplay loop> 
-    <source src="lost.mp3"  type="audio/mp3">
+<audio id= "audio1" onloadeddata="setHalfVolume()" autoplay> 
+    <source src="chrn.mp3"  type="audio/mp3">
 </audio>
 
 
@@ -56,39 +66,53 @@ h1 {
 <br>
 <br>
 
-<a href="http://steamcommunity.com/groups/cuck-team"><h1>cuck.team</h1></a>
+<a href="http://steamcommunity.com/groups/cuckk"><h1>cuck.team</h1></a>
 
-    
-
+<a href="https://discord.gg/jtQQ2q8"><h4>DISCORD</h4></a>
 
 <marquee class="marquee1" width="400" height="40" bgcolor="000000">
-<a href="http://steamcommunity.com/profiles/76561198262899605" style="text-decoration:none target="_blank">defii</a> // 
- <a href="http://steamcommunity.com/profiles/76561198028224926" style="text-decoration:none target="_blank">VMiZ</a> //
+ <a href="http://steamcommunity.com/profiles/76561198066367477" style="text-decoration:none target="_blank">hisoka</a> // 
+ <a href="http://steamcommunity.com/profiles/76561198185431801" style="text-decoration:none target="_blank">xeth</a> //
  <a href="http://steamcommunity.com/profiles/76561198276420251" style="text-decoration:none target="_blank">live</a> //
  <a href="http://steamcommunity.com/profiles/76561198297689112" style="text-decoration:none target="_blank">shep</a> // 
- <a href="http://steamcommunity.com/profiles/76561198185431801" style="text-decoration:none target="_blank">xeth</a> //
- <a href="http://steamcommunity.com/profiles/76561197963980826" style="text-decoration:none target="_blank">veuz</a> //
+ <a href="http://steamcommunity.com/profiles/76561197963980826" style="text-decoration:none target="_blank">figuta</a> //
  <a href="http://steamcommunity.com/profiles/76561198098437311" style="text-decoration:none target="_blank">iris</a> //
- <a href="http://steamcommunity.com/profiles/76561198357571516" style="text-decoration:none target="_blank">erfolge</a> //
- <a href="http://steamcommunity.com/profiles/76561197984436595" style="text-decoration:none target="_blank">koszZ</a> //
- <a href="http://steamcommunity.com/profiles/76561197961260339" style="text-decoration:none target="_blank">mydayy1337</a> //    
+ <a href="http://steamcommunity.com/profiles/76561198357571516" style="text-decoration:none target="_blank">mylo</a> //
+ <a href="http://steamcommunity.com/profiles/76561198357571516" style="text-decoration:none target="_blank">koszz</a> //
+ <a href="http://steamcommunity.com/profiles/76561197961260339" style="text-decoration:none target="_blank">mydayy</a> //
  <a href="http://steamcommunity.com/profiles/76561198183147358" style="text-decoration:none target="_blank">fLasHyyy</a>
 </marquee>
+
+
+
 </div>
+
+
 
 </body>
 <script>
 function setHalfVolume() {
-    var myAudio = document.getElementById("audio1");
+    var myAudio = document.getElementById("audio1");  
     myAudio.volume = 0.05;
 }
-var NUM_PARTICLES = ( ( ROWS = 150 ) * ( COLS = 240) ),
+var NUM_PARTICLES = ( ( ROWS = 100 ) * ( COLS = 210) ),
     THICKNESS = Math.pow( 80, 2 ),
-    SPACING = 9,
+    SPACING = 8,
     MARGIN = 100,
     COLOR = 220,
     DRAG = 0.95,
     EASE = 0.25,
+    
+    /*
+    
+    used for sine approximation, but Math.sin in Chrome is still fast enough :)http://jsperf.com/math-sin-vs-sine-approximation
+
+    B = 4 / Math.PI,
+    C = -4 / Math.pow( Math.PI, 2 ),
+    P = 0.225,
+
+    */
+
     container,
     particle,
     canvas,
